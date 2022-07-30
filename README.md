@@ -1,3 +1,6 @@
+
+# Speck API
+
 | Name | Routes | HTTP | Deskripsi | Dibuat | Hasil Test | Middleware Auth |
 | --- | --- | --- | --- | --- | --- | --- |
 | CMS |  |  |  |  |  |  |
@@ -56,11 +59,6 @@
 |  | /api/v1/dashboard/:id | GET | Get detail dashboard by id |  |  | Ya |
 |  | /api/v1/participants/auth/signin | POST | Signin |  |  | Tidak |
 |  | /api/v1/participants/auth/signup | POST | Signup |  |  | Tidak |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
 # Categories
