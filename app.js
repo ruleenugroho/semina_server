@@ -3,8 +3,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+var cors = require('cors')
 const app = express();
-
+app.use(cors())
 // router
 const categoriesRouter = require('./app/api/v1/categories/router');
 const imagesRouter = require('./app/api/v1/images/router');
@@ -28,9 +29,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.status(200).json({
-    message: 'Welcome to api semina',
-  });
+	res.status(200).json({
+		message: 'Welcome to api semina',
+	});
 });
 
 app.use(`${v1}/cms`, categoriesRouter);
