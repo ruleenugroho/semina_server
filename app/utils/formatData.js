@@ -17,7 +17,7 @@ const formatNumber = (value) => {
 		return 0
 	} else {
 		let val = value / 1
-		return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+		return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 	}
 };
 
